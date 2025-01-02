@@ -28,20 +28,37 @@ header {
   padding: 10px 20px;
 }
 
-nav {
+/* NAVIGATION BAR */
+
+.nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
   align-items: center;
 }
 
-nav a {
+.nav-left a,
+.nav-right a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  margin: 0 10px;
 }
 
-nav a:hover {
+.nav-left a:hover,
+.nav-right a:hover {
   text-decoration: underline;
+}
+
+.nav-logo img {
+  height: 50px;
 }
 
 main {
