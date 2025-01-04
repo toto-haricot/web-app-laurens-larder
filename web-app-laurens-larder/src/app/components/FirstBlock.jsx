@@ -1,7 +1,11 @@
 "use client";
 import { Pacifico } from "@next/font/google";
 
-const pacifico = Pacifico({ weight: "400", subsets: ["latin"] });
+// FONT
+const pacifico = Pacifico({ 
+  weight: "400", 
+  subsets: ["latin"]
+});
 
 const FirstBlock = () => {
     return (
