@@ -1,5 +1,5 @@
 "use client";
-import { Pacifico } from "@next/font/google";
+import { Pacifico } from "next/font/google";
 
 // FONT
 const pacifico = Pacifico({ 
@@ -12,7 +12,7 @@ const FirstBlock = () => {
       <section className="first-block">
         <div className="description">
           <h1 className={pacifico.className}>Welcome to Lauren's Larder</h1>
-          <p>
+          <p className={pacifico.className}>
           Discover the art of catering with Lauren's Larder. 
           From intimate gatherings to bustling pop-up stores, we deliver culinary excellence with style and passion.
           </p>
@@ -20,9 +20,16 @@ const FirstBlock = () => {
         <style jsx>{`
           .first-block {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #f9f9f9;
+            height: 300px;
           }
+
+          .description {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+
           .description p {
             font-size: 1.2rem;
             color: #555;
@@ -30,6 +37,12 @@ const FirstBlock = () => {
             max-width: 600px;
             margin: 0 auto;
           }
+          .description h1 {
+            text-align: center;
+            color: black;
+            font-size: 60px;         
+          } 
+
         `}</style>
       </section>
     );
