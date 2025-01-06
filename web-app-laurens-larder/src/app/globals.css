@@ -26,6 +26,15 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: row;
+  position: fixed; /* Sticks the navbar to a fixed position */
+  top: 0; /* Aligns it to the top of the page */
+  left: 0; /* Aligns it to the left of the page */
+  width: 100%; /* Makes the navbar span the entire width of the page */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* NAVIGATION BAR */
@@ -74,8 +83,93 @@ nav {
   transform: translate(-50%, 0);
 }
 
+/* FIRST BLOCK */
 
+.first-block {
+  text-align: center;
+  height: 300px;
+  padding-top: 50px;
+}
 
+.description {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
+.description p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+  
+.description h1 {
+  text-align: center;
+  color: black;
+  font-size: 60px;         
+} 
 
+/* SECOND BLOCK */
 
+.second-block {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  height: 500px;
+}
+
+.images-row {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  height: 400px;
+}
+
+.image-wide {
+  right: 0;
+  width: 65%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.image-narrow {
+  width: 30%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Container for the image */
+.image-container {
+  overflow: hidden; /* Ensures the image doesn't overflow its container */
+  display: block; /* Keeps images inline with other content */
+  position: relative;
+  flex-grow: 1; /* Makes the container stretch to fill space */
+}
+
+/* Image styles */
+.image-container img {
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  position: absolute; /* Allows the image to be positioned inside the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Fills the width of the container */
+  height: 100%; /* Fills the height of the container */
+  object-fit: cover; /* Ensures the image covers the container */  
+}
+
+/* Zoom effect on hover */
+.image-container:hover img {
+  transform: scale(1.1); /* Scales the image to 110% */
+}
+
+.image-left {
+  flex: 1; /* Takes up 1 portion of the available space */
+}
+
+.image-right {
+  flex: 3; /* Takes up 1 portion of the available space */
+}
