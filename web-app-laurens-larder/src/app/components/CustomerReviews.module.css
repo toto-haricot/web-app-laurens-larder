@@ -10,16 +10,36 @@
     flex: 1;
     min-width: 20%; 
     background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    border: 1px solid grey; 
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     box-sizing: border-box;
     font-size: 16px;
-    font-style: italic;
     text-align: center;
     border-radius: 6px;
+    position: relative; 
+  }
+
+  .quote {
+    position: absolute;
+    top: 50%; /* Move 50% down from the top */
+    left: 50%; /* Move 50% from the left */
+    transform: translate(-50%, -50%); /* Adjust for the child’s own dimensions */
+    text-align: center;
+    font-style: italic;
+  }
+
+
+  .author {
+    position: absolute; /* Position relative to the father */
+    bottom: 10px; /* 10px from the bottom */
+    right: 10px; /* 10px from the right */
+    color: black;
+    padding: 10px;
+    text-align: right;
+    font-weight: bolder;
   }
   
   /* Animates sliding effect */

@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react';
 import styles from './CustomerReviews.module.css';
 
 const reviews = [
-  "Amazing service and delicious food!",
-  "The team was super professional and friendly!",
-  "Our guests were thrilled with the presentation.",
-  "Would definitely recommend for any event!",
-  "The flavors were absolutely outstanding!",
-  "Best catering experience we've ever had!",
-  "Superb quality and attention to detail.",
+  { text: "Amazing service and delicious food!", author: "Bruce Willis"},
+  { text: "The team was super professional and friendly!", author: "Jason Statam"},
+  { text: "Our guests were thrilled with the presentation.", author: "King Kong"},
+  { text: "Would definitely recommend for any event!", author: "God"},
+  { text: "The flavors were absolutely outstanding!", author: "Obama"},
+  { text: "Best catering experience we've ever had!", author: "Léon Marchand"},
+  { text: "Superb quality and attention to detail.", author: "Antoine Dupond"},
+  { text: "Yum the nachos are very good", author: "Maradona"},
 ];
 
 export default function CustomerReviews() {
@@ -28,10 +29,13 @@ export default function CustomerReviews() {
   }, []);
 
   return (
-    <div className={`${styles.container} pour-une-classe`}>
-      {visibleReviews.map((quote, index) => (
-        <div key={index} className={styles.square}>
-          {quote}
+    <div className={`${styles.container}`}>
+      {visibleReviews.map((review, index) => (
+        <div key={index} className={`${styles.square} pour-une-classe`}>  {/* DIV DE LA CRITIQUE */}
+          <div className={styles.quote}>{review.text}</div>
+          <div className={styles.author}>{review.author}</div>
+          {/* {quote} */}
+          
         </div>
       ))}
     </div>
