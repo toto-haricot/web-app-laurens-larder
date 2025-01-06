@@ -10,6 +10,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  font-family: var(--font-poppins);
 }
 
 main {
@@ -109,7 +110,8 @@ img {
 .description h1 {
   text-align: center;
   color: black;
-  font-size: 60px;         
+  font-size: 50px;    
+  font-family: var(--font-pacifico);     
 } 
 
 /* SECOND BLOCK */
@@ -164,6 +166,7 @@ img {
 /* Zoom effect on hover */
 .image-container:hover img {
   transform: scale(1.1); /* Scales the image to 110% */
+  border-radius: 6px;
 }
 
 .image-left {
@@ -173,3 +176,22 @@ img {
 .image-right {
   flex: 3; /* Takes up 1 portion of the available space */
 }
+
+/* THIRD BLOCK */
+
+.customers-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-reviews h1 {
+  text-align: center;
+  color: black;
+  font-size: 50px;    
+  font-family: var(--font-pacifico);
+  width: 70%;
+  padding-bottom: 60px;
+} 
