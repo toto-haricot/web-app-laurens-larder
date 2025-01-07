@@ -3,6 +3,7 @@ import Image from "next/image";
 import FirstBlock from "./components/FirstBlock";
 import SecondBlock from "./components/SecondBlock";
 import ThirdBlock from "./components/ThirdBlock";
+import FourthBlock from "./components/FourthBlock";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <FirstBlock />
       <SecondBlock />
       <ThirdBlock />
+      <FourthBlock />
     </div>
   );
 }

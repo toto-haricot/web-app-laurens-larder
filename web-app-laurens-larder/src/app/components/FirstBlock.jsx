@@ -12,5 +12,5 @@ const FirstBlock = () => {
     );
   };
   
-  export default FirstBlock;
+export default FirstBlock;
   

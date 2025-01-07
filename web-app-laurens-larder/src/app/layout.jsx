@@ -1,4 +1,4 @@
-import { Poppins, Pacifico } from "next/font/google";
+import { Poppins, Pacifico, Yusei_Magic } from "next/font/google";
 import "./globals.css";
 
 // components
@@ -10,10 +10,12 @@ const poppins = Poppins({
   variable: '--font-poppins', 
 });
 
+const yuseiMagic = Yusei_Magic({
+  subsets: ['latin'], 
+  weight: '400', 
+  variable: '--font-yusei', 
+});
 
-// WIP
-
-// import { Pacifico } from "next/font/google";
 
 // FONT
 const pacifico = Pacifico({ 
@@ -26,7 +28,7 @@ const pacifico = Pacifico({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${pacifico.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${pacifico.variable} ${yuseiMagic.variable}`}>
       <body>
         <Navbar/>
         {children}

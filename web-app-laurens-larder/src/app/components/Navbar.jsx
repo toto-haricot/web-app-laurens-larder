@@ -15,8 +15,9 @@ export default function Navbar() {
             <Image
               src="/LL logo 2.jpg"
               alt="Catering Business Logo"
-              width={100} 
+              width={150} 
               height={250}
+              objectFit="contain"
             />
           </div>
 

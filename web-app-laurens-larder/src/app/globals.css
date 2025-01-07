@@ -19,20 +19,26 @@ main {
   background-color: var(--background);
 }
 
+h1 {
+  font-family: var(--font-yusei);
+  text-align: center;
+  color: black;
+  font-size: 45px;   
+}
+
 
 nav {
   background-color: #F3CFC6;
   color: #FE4546;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   flex-direction: row;
-  position: fixed; /* Sticks the navbar to a fixed position */
-  top: 0; /* Aligns it to the top of the page */
-  left: 0; /* Aligns it to the left of the page */
-  width: 100%; /* Makes the navbar span the entire width of the page */
-  z-index: 1000; /* Ensures it stays above other elements */
-  border-bottom: 2px solid #fE4565;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
 }
 
 img {
@@ -53,10 +59,8 @@ img {
 .nav-left {
   display: flex;
   align-items: center;
-  /* border: 2px solid #333; */
   position: fixed;
   left: 20px;
-  background-color: #FF9E21;
 }
 
 .nav-right {
@@ -91,8 +95,8 @@ img {
 
 .first-block {
   text-align: center;
-  height: 300px;
-  padding-top: 50px;
+  height: 350px;
+  padding-top: 80px;
 }
 
 .description {
@@ -109,13 +113,6 @@ img {
   max-width: 600px;
   margin: 0 auto;
 }
-  
-.description h1 {
-  text-align: center;
-  color: black;
-  font-size: 50px;    
-  font-family: var(--font-pacifico);     
-} 
 
 /* SECOND BLOCK */
 
@@ -139,14 +136,12 @@ img {
   width: 65%;
   border-radius: 6px;
   object-fit: cover;
-  border-bottom: 2px solid #fE4565;
 }
 
 .image-narrow {
   width: 30%;
   border-radius: 6px;
   object-fit: cover;
-  border-bottom: 2px solid #fE4565;
 }
 
 /* Container for the image */
@@ -166,14 +161,12 @@ img {
   width: 100%; /* Fills the width of the container */
   height: 100%; /* Fills the height of the container */
   object-fit: cover; /* Ensures the image covers the container */  
-  border: 2px solid #fE4565;
 }
 
 /* Zoom effect on hover */
 .image-container:hover img {
   transform: scale(1.1); /* Scales the image to 110% */
   border-radius: 6px;
-  border: 2px solid #fE4565;
 }
 
 .image-left {
@@ -197,8 +190,16 @@ img {
 .customers-reviews h1 {
   text-align: center;
   color: black;
-  font-size: 50px;    
-  font-family: var(--font-pacifico);
+  font-size: 45px;    
+  font-family: var(--font-yusei);
   width: 70%;
   padding-bottom: 60px;
 } 
+
+/* FOURTH BLOCK */
+.fourth-block {
+  text-align: center;
+  height: 350px;
+  padding-top: 80px;
+}
+
