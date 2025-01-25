@@ -5,6 +5,8 @@
 :root {
   --background: #FFF0DC;
   --foreground: #171717;
+  --orange: #FF9E21;
+  --pink: #EF4063;
 }
 
 body {
@@ -61,6 +63,8 @@ img {
   align-items: center;
   position: fixed;
   left: 20px;
+  border: 2px solid var(--orange);
+  border-radius: 10px;
 }
 
 .nav-right {
@@ -69,6 +73,7 @@ img {
   /* border: 2px solid #333; */
   position: fixed;
   right: 20px;
+  gap: 10px;
 }
 
 .nav-left a,
@@ -121,6 +126,7 @@ img {
   justify-content: center;
   padding: 30px 20px;
   height: 500px;
+  border: 1px solid turquoise;
 }
 
 .images-row {
@@ -129,6 +135,7 @@ img {
   justify-content: space-evenly;
   gap: 20px;
   height: 400px;
+  border: 2px solid orange;
 }
 
 .image-wide {
@@ -203,3 +210,19 @@ img {
   padding-top: 80px;
 }
 
+
+/* CATERING PAGE */
+
+.catering-page {
+  padding-top: 120px;
+}
+
+.catering-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catering-page-container h1 {
+  padding-bottom: flex;
+}

@@ -23,8 +23,8 @@ export default function Navbar() {
 
         {/* Right Navigation */}
         <div className="nav-right">
-            <Link href="/about">ABOUT</Link>
-            <Link href="/menus">MENUS</Link>
+            <Link href="/catering">CATERING</Link>
+            <Link href="/pop-up">POP-UP</Link>
           </div>
         </div>
         </nav>
