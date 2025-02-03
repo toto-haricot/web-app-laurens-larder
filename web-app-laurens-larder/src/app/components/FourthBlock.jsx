@@ -1,13 +1,14 @@
-const FourthBlock = () => {
+import CustomerReviews from './CustomerReviews';
+
+const ThirdBlock = () => {
     return (
-        <section className="fourth-block">
-            <div className="get-in-touch">
-                <h1>Get in touch</h1>
-            </div>
+        <section className="third-block">
+          <div className="customers-reviews">
+            <h1>What our customers are saying</h1>
+            <CustomerReviews />
+          </div>
         </section>
-    );
-};
-
-export default FourthBlock;
-
-// just to make a git commit (to be removed)
+      );
+  };
+  
+  export default ThirdBlock;
