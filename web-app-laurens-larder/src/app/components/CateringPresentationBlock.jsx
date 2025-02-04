@@ -13,7 +13,15 @@ const CateringPresentationBlock = () => {
             Whether it’s weddings, parties, or corporate functions, we offer tailored menus featuring fresh, high-quality ingredients to suit every taste and dietary requirement. 
           </div>
         </div>
-        <ImageFrieze />
+        <ImageFrieze 
+          images={[
+            "/food1.jpg",
+            "/food2.jpg",
+            "/catering1.jpg",
+            "/beige.jpg"
+          ]}
+          linkUrl="/catering"
+        />
       </section>
     );
   };
