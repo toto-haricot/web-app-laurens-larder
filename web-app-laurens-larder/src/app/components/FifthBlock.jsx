@@ -9,5 +9,3 @@ const FourthBlock = () => {
 };
 
 export default FourthBlock;
-
-// just to make a git commit (to be removed)

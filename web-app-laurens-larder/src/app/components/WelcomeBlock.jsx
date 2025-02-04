@@ -1,4 +1,4 @@
-const FirstBlock = () => {
+const WelcomeBlock = () => {
     return (
       <section className="homepage-first-block">
         <h1>
@@ -27,5 +27,5 @@ const FirstBlock = () => {
     );
   };
   
-export default FirstBlock;
+export default WelcomeBlock;
   

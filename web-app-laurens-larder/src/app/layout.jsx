@@ -1,8 +1,11 @@
-import { Poppins, Pacifico, Yusei_Magic } from "next/font/google";
+import Head from "next/head";
+import Navbar from './components/Navbar';
+import Footer from "next/head";
 import "./globals.css";
 
-// components
-import Navbar from './components/Navbar';
+// FONTS DEFINITION ==============================================
+
+import { Poppins, Pacifico, Yusei_Magic } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,22 +19,28 @@ const yuseiMagic = Yusei_Magic({
   variable: '--font-yusei', 
 });
 
-
-// FONT
 const pacifico = Pacifico({ 
   weight: "400", 
   subsets: ["latin"],
   variable: '--font-pacifico',
 });
 
+// ===============================================================
 
 
-export default function RootLayout({ children }) {
+
+export default function Layout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${pacifico.variable} ${yuseiMagic.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${yuseiMagic.variable} ${pacifico.variable}`}>
       <body>
-        <Navbar/>
-        {children}
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          {children}
+        </main>
+        <footer>
+        </footer>
       </body>
     </html>
   );
