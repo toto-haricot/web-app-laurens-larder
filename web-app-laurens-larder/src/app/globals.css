@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 :root {
   --background: #FFF0DC;
   --foreground: #171717;
@@ -147,14 +152,6 @@ nav {
   height: 400px;
 }
 
-.images-column {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
-  gap: 20px;
-  flex-grow: 1; 
-}
-
 .image-container {
   border-radius: 6px;
   overflow: hidden; 
@@ -178,16 +175,6 @@ nav {
   object-fit: cover; 
 }
 
-.image {
-  object-fit: cover;
-}
-
-.icon {
-  width: 40px;
-  height: auto;
-  color: #EF4063;
-}
-
 .image-wide {
   right: 0;
   width: 65%;
@@ -195,23 +182,6 @@ nav {
 
 .image-narrow {
   width: 30%;
-}
-
-.go-to-catering-menus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  height: 80px;
-  background-color: #F3CFC6;
-  color: var(--pink);
-}
-
-.go-to-catering-menus p {
-  color: var(--pink);
-}
-.image-above-menu {
-  flex: 4;
 }
 
 .homepage-welcome-section-image-left {
