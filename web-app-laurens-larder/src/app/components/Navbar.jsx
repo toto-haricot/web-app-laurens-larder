@@ -5,12 +5,12 @@ export default function Navbar() {
     return (
         <nav>
           <div className="nav-container">
-            {/* Left Navigation */}
+            {/* LEFT PART */}
             <div className="nav-left">
               <Link href="/contact">CONTACT</Link>
             </div>
 
-            {/* Logo Section */}
+            {/* CENTER LOGO PART */}
             <div className="nav-logo">
                 <Image
                   src="/LL logo 2.jpg"
@@ -22,7 +22,7 @@ export default function Navbar() {
                 />
               </div>
 
-            {/* Right Navigation */}
+            {/* RIGHT PART */}
             <div className="nav-right">
                 <Link href="/catering">CATERING</Link>
                 <Link href="/pop-up">POP-UP</Link>

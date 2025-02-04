@@ -19,14 +19,44 @@ main {
 
 h1 {
   font-family: var(--font-yusei);
-  text-align: center;
   color: black;
-  font-size: 45px;   
+  font-size: 45px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 60%;
 }
 
 
 img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.title-plus-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.title {
+  font-family: var(--font-yusei);
+  color: black;
+  font-size: 45px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 60%;
+  padding-top: 20px;
 }
 
 /* NAVIGATION BAR */
@@ -100,37 +130,20 @@ nav {
   height: auto;
 }
 
+
 /* FIRST BLOCK */
 
-.homepage-first-block {
+.homepage-section {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
-}
-
-.homepage-first-block h1 {
-  padding: 10px 0 20px 0;
-}
-
-.homepage-first-block p {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.6;
-  max-width: 60%;
-  padding: 10px 0 40px 0;
-}
-
-/* SECOND BLOCK */
-
-.second-block {
-  display: flex;
   justify-content: center;
-  padding: 30px 20px;
-  height: 500px;
-  border: 1px solid turquoise;
+  padding-top: 60px;
 }
+
+
+/* IMAGE CLASSES */
 
 .images-row {
   width: 80%;
@@ -140,27 +153,27 @@ nav {
   height: 400px;
 }
 
-.image-wide {
-  right: 0;
-  width: 65%;
-  border-radius: 6px;
-  object-fit: cover;
+.images-column {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-grow: 1; 
 }
 
-.image-narrow {
-  width: 30%;
+.image-container {
   border-radius: 6px;
-  object-fit: cover;
-}
-
-.homepage-first-block-image-container {
   overflow: hidden; 
   display: block; 
   position: relative;
   flex-grow: 1; 
 }
 
-.homepage-first-block-image-container img {
+.image-container:hover img {
+  transform: scale(1.1); 
+}
+
+.image-container img {
   transition: transform 0.3s ease; 
   position: absolute; 
   top: 0;
@@ -170,19 +183,45 @@ nav {
   object-fit: cover; 
 }
 
-/* Zoom effect on hover */
-.image-container:hover img {
-  transform: scale(1.1); /* Scales the image to 110% */
+.image {
+  object-fit: cover;
+}
+
+.image-wide {
+  right: 0;
+  width: 65%;
+}
+
+.image-narrow {
+  width: 30%;
+}
+
+.go-to-catering-menus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
+  height: 80px;
+  background-color: #F3CFC6;
+  color: var(--pink);
 }
 
-.homepage-first-block-image-left {
-  flex: 1; /* Takes up 1 portion of the available space */
+.go-to-catering-menus p {
+  color: var(--pink);
+}
+.image-above-menu {
+  flex: 4;
 }
 
-.homepage-first-block-image-right {
-  flex: 3; /* Takes up 1 portion of the available space */
+.homepage-welcome-section-image-left {
+  flex: 1; 
 }
+
+.homepage-welcome-section-image-right {
+  flex: 3; 
+}
+
+
 
 /* THIRD BLOCK */
 
