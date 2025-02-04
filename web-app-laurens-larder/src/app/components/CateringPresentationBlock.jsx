@@ -30,6 +30,7 @@ const CateringPresentationBlock = () => {
           </div>
           <div className="images-column">
             <div className="go-to-catering-menus">
+              <img src="/icon-menu.png" alt="menu icone" className="icon"/>
               <p>Explore our catering menus</p>
             </div>
             <div className="image-container image-above-menu">
