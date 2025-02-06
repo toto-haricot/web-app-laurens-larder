@@ -236,3 +236,8 @@ nav {
 .catering-page-container h1 {
   padding-bottom: flex;
 }
+
+#order {
+  background-color: var(--pink);
+  color: #F3CFC6;
+}

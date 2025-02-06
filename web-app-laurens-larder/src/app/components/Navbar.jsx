@@ -12,20 +12,26 @@ export default function Navbar() {
 
             {/* CENTER LOGO PART */}
             <div className="nav-logo">
+              <Link href="/">
                 <Image
-                  src="/LL logo 2.jpg"
-                  alt="Catering Business Logo"
-                  width={120}   
-                  height={120}   
-                  priority      
-                  className="logo"  
-                />
-              </div>
+                    src="/LL logo 2.jpg"
+                    alt="Catering Business Logo"
+                    width={120}   
+                    height={120}   
+                    priority      
+                    className="logo"  
+                  />
+              </Link>
+            </div>
 
             {/* RIGHT PART */}
             <div className="nav-right">
                 <Link href="/catering">CATERING</Link>
                 <Link href="/pop-up">POP-UP</Link>
+                <div id="order">
+                  <Link href="/order">ORDER</Link>
+                </div>
+                
             </div>
           </div>
         </nav>
