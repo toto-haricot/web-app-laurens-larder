@@ -18,7 +18,7 @@ const CateringPresentationBlock = () => {
             "/food1.jpg",
             "/food2.jpg",
             "/catering1.jpg",
-            "/beige.jpg"
+            "/catering0.png"
           ]}
           linkUrl="/catering"
         />

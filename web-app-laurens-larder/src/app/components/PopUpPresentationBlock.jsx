@@ -18,7 +18,7 @@ const PopUpPresentationBlock = () => {
             "/popup1.jpeg",
             "/popup2.jpeg",
             "/popup3.jpeg",
-            "/beige.jpg"
+            "/popup0.png"
           ]}
           linkUrl="/pop-up"
         />
