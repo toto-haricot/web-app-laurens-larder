@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from './components/Navbar';
-import Footer from "next/head";
+import Footer from './components/Footer';
 import "./globals.css";
 
 // FONTS DEFINITION ==============================================
@@ -39,8 +39,7 @@ export default function Layout({ children }) {
         <main>
           {children}
         </main>
-        <footer>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

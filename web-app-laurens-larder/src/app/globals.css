@@ -8,6 +8,7 @@
   --foreground: #171717;
   --orange: #FF9E21;
   --pink: #EF4063;
+  --pink-background: #F3CFC6;
 }
 
 body {
@@ -61,7 +62,7 @@ p {
 /* NAVIGATION BAR */
 
 nav {
-  background-color: #F3CFC6;
+  background-color: var(--pink-background);
   color: var(--pink);
   height: 70px;
   display: flex;
@@ -129,6 +130,13 @@ nav {
   height: auto;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: var(--pink-background);
+  color: var(--pink);
+  height: 70px;
+}
 
 /* FIRST BLOCK */
 
