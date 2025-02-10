@@ -19,7 +19,7 @@ export default function Navbar() {
                     width={120}   
                     height={120}   
                     priority      
-                    className="logo"  
+                    className="logo"
                   />
               </Link>
             </div>

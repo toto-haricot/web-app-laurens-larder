@@ -11,8 +11,8 @@ function ImageFrieze({ images, linkUrl }) {
           <Image
             src={src}
             alt={`Image ${index + 1}`}
-            layout="fill"
-            objectFit="cover"
+            fill={true}
+            style={{objectFit:'cover'}}
             className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105"
           />
         </div>
@@ -25,8 +25,8 @@ function ImageFrieze({ images, linkUrl }) {
           <Image
             src={images[2]}
             alt="Image 3"
-            layout="fill"
-            objectFit="cover"
+            fill={true}
+            style={{objectFit:'cover'}}
             className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105"
           />
         </div>
@@ -38,8 +38,8 @@ function ImageFrieze({ images, linkUrl }) {
               <Image
                 src={images[3]}
                 alt="Image 4 Cliquable"
-                layout="fill"
-                objectFit="cover"
+                fill={true}
+                style={{objectFit:'cover'}}
                 className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105"
               />
             </Link>
@@ -47,8 +47,8 @@ function ImageFrieze({ images, linkUrl }) {
             <Image
               src={images[3]}
               alt="Image 4"
-              layout="fill"
-              objectFit="cover"
+              fill={true}
+              style={{objectFit:'cover'}}
               className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105"
             />
           )}
