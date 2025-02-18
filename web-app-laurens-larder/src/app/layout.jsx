@@ -36,7 +36,7 @@ export default function Layout({ children }) {
         <header>
           <Navbar />
         </header>
-        <main>
+        <main className="pt-[100px]">
           {children}
         </main>
         <Footer />
