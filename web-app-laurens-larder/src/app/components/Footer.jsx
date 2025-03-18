@@ -6,6 +6,8 @@ export default function Footer() {
       {/* Left Side - Name & Copyright */}
       <div>
         &copy; {new Date().getFullYear()} Lauren's Larder
+        //
+        Terms and Conditions
       </div>
 
       {/* Right Side - Social Links */}

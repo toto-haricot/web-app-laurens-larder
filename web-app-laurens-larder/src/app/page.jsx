@@ -4,9 +4,8 @@ import Image from "next/image";
 import WelcomeBlock from "./components/WelcomeBlock";
 import CateringPresentationBlock from "./components/CateringPresentationBlock";
 import PopUpPresentationBlock from "./components/PopUpPresentationBlock";
-import CustomerReviewsBlock from "./components/CustomerReviewsBlock"
-// import ThirdBlock from "./components/ThirdBlock"; 
-// import FourthBlock from "./components/FourthBlock";
+import CustomerReviewsBlock from "./components/CustomerReviewsBlock";
+import GetInTouchBlock from "./components/GetInTouchBlock"
 
 export default function Home() {
   return (
@@ -15,6 +14,7 @@ export default function Home() {
       <CateringPresentationBlock /> 
       <PopUpPresentationBlock />
       <CustomerReviewsBlock />
+      <GetInTouchBlock />
     </>
   );
 }

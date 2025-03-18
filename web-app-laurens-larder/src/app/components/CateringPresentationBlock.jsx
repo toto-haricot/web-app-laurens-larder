@@ -15,8 +15,8 @@ const CateringPresentationBlock = () => {
         </div>
         <ImageFrieze 
           images={[
-            "/food1.jpg",
-            "/food2.jpg",
+            "/laurens-larder-41.jpg",
+            "/laurens-larder-38.jpg",
             "/catering1.jpg"
           ]}
           textUrl="Explore catering menu"

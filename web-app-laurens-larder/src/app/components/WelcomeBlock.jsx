@@ -14,13 +14,13 @@ const WelcomeBlock = () => {
         <div className="images-row">
           <div className="image-container homepage-welcome-section-image-left">
             <img
-              src="/food1.jpg"
+              src="/laurens-larder-neon.jpg"
               className="image-narrow"
             />
           </div>
           <div className="image-container homepage-welcome-section-image-right">
             <img
-              src="/food2.jpg"
+              src="/laurens-larder-ag-show.jpg"
               alt="Beautiful dish 2"
               className="image-wide"
             />
