@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function ImageFrieze({ images, linkUrl }) {
+function ImageFrieze({ images, textUrl, linkUrl }) {
   return (
     <div className="grid grid-cols-3 gap-4 h-[400px] w-4/5">
 
@@ -32,26 +32,12 @@ function ImageFrieze({ images, linkUrl }) {
         </div>
 
         {/* 3E COLONNE - IMAGE 2 */}
-        <div className="relative overflow-hidden rounded-md group row-span-1">
-        {linkUrl ? (
-            <Link href={linkUrl} className="block">
-              <Image
-                src={images[3]}
-                alt="Image 4 Cliquable"
-                fill={true}
-                style={{objectFit:'cover'}}
-                className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105"
-              />
-            </Link>
-          ) : (
-            <Image
-              src={images[3]}
-              alt="Image 4"
-              fill={true}
-              style={{objectFit:'cover'}}
-              className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105"
-            />
-          )}
+        <div className="flex justify-center items-center overflow-hidden rounded-md group row-span-1 bg-[var(--pink)]">  
+        <Link href={linkUrl}>
+          <div className="text-[var(--pink-background)]">
+            {textUrl}
+          </div>
+        </Link>
         </div>
         
       </div>

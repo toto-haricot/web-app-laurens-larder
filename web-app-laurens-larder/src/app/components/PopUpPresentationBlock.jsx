@@ -17,9 +17,9 @@ const PopUpPresentationBlock = () => {
           images={[
             "/popup1.jpeg",
             "/popup2.jpeg",
-            "/popup3.jpeg",
-            "/popup0.png"
+            "/popup3.jpeg"
           ]}
+          textUrl="Explore pop-up menu"
           linkUrl="/pop-up"
         />
       </section>

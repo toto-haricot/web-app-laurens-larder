@@ -17,9 +17,9 @@ const CateringPresentationBlock = () => {
           images={[
             "/food1.jpg",
             "/food2.jpg",
-            "/catering1.jpg",
-            "/catering0.png"
+            "/catering1.jpg"
           ]}
+          textUrl="Explore catering menu"
           linkUrl="/catering"
         />
       </section>
