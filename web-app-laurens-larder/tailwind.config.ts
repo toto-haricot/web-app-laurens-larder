@@ -8,11 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        LL_pink: '#FE4546',
-        LL_pink2: '#F3CFC6',
-        LL_orange: '#FF9E21',
-        LL_grey: '#DEDFD1',
+      fontFamily: {
+        bobby: ['Bobby Jones Soft', 'cursive'],
+        roberto: ['Roberto Mono', 'monospace'],
       },
     },
   },

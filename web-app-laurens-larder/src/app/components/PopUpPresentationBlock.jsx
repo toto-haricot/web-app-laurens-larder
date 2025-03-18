@@ -6,10 +6,10 @@ const PopUpPresentationBlock = () => {
       <section className="homepage-section">
         <div className="title-plus-description">
           <div className="title">
-            Pop-up Stores
+            Pop-ups
           </div>
           <div className="description">
-          Our pop-up stores bring fresh, tasty food to markets and events year-round. 
+          Our pop-ups bring fresh, tasty food to markets and events year-round. 
           From hearty brekkie burgers to loaded nachos, we serve up crowd favorites wherever we go. Keep an eye out for us!
           </div>
         </div>

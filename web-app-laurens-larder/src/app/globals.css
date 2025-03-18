@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Bobby Jones Soft';
+  src: url('/fonts/BobbyJonesSoft.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/fonts/RobotoMonoRegular.ttf') format('truetype');
+}
+
 
 :root {
   --background: #FFF0DC;
-  --foreground: #171717;
+  --foreground: #000000;
   --orange: #FF9E21;
   --pink: #FE4566;
   --pink-background: #F3CFC6;
@@ -14,24 +24,23 @@
 body {
   color: var(--foreground);
   background: var(--orange);
-  font-family: var(--font-poppins);
+  font-family: 'Roboto Mono';
 }
 
 main {
   padding: 20px;
   text-align: center;
-  background-color: var(--FF9E21);
+  background-color: var(--orange);
+  color: var(--foreground)
 }
 
 h1 {
-  font-family: var(--font-yusei);
-  color: black;
+  font-family: 'Bobby Jones Soft';
   font-size: 45px;
 }
 
 p {
   font-size: 1.2rem;
-  color: #555;
   line-height: 1.6;
   max-width: 60%;
 }
@@ -46,14 +55,12 @@ p {
 }
 
 .title {
-  font-family: var(--font-yusei);
-  color: black;
+  font-family: 'Bobby Jones Soft';
   font-size: 45px;
 }
 
 .description {
   font-size: 1.2rem;
-  color: #555;
   line-height: 1.6;
   max-width: 60%;
   padding-top: 20px;
@@ -210,7 +217,6 @@ footer {
   text-align: center;
   color: black;
   font-size: 45px;    
-  font-family: var(--font-yusei);
   width: 70%;
   padding-bottom: 60px;
 } 

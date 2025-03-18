@@ -7,7 +7,7 @@ const WelcomeBlock = () => {
           </div>
           <div className="description">
             Discover the art of catering with Lauren's Larder. 
-            From intimate gatherings to bustling poxp-up stores, we deliver culinary excellence with style and passion.
+            From intimate gatherings to bustling pop-ups, we deliver culinary excellence with style and passion.
           </div>
         </div>
 
