@@ -7,20 +7,20 @@
   --background: #FFF0DC;
   --foreground: #171717;
   --orange: #FF9E21;
-  --pink: #EF4063;
+  --pink: #FE4566;
   --pink-background: #F3CFC6;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--orange);
   font-family: var(--font-poppins);
 }
 
 main {
   padding: 20px;
   text-align: center;
-  background-color: var(--background);
+  background-color: var(--FF9E21);
 }
 
 h1 {
@@ -62,8 +62,8 @@ p {
 /* NAVIGATION BAR */
 
 nav {
-  background-color: var(--pink-background);
-  color: var(--pink);
+  background-color: var(--pink);
+  color: var(--pink-background);
   height: 70px;
   display: flex;
   align-items: center;
@@ -72,10 +72,6 @@ nav {
   left: 0; 
   width: 100%; 
   z-index: 1000; 
-}
-
-.nav-container a:visited {
-  color: var(--pink);
 }
 
 .nav-container {
@@ -121,7 +117,6 @@ nav {
   top: 0px;
   left: 50%;
   transform: translate(-50%, 0);
-  border: 2px solid #FE4546;
 }
 
 .logo {
@@ -247,5 +242,5 @@ footer {
 
 #order {
   background-color: var(--pink);
-  color: #F3CFC6;
+  color: var(--pink-background);
 }

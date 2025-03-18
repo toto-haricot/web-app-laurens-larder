@@ -7,12 +7,7 @@ export default function Navbar() {
           <div className="nav-container">
             {/* LEFT PART */}
             <div className="nav-left">
-              <Link href="/contact">CONTACT</Link>
-            </div>
-
-            {/* CENTER LOGO PART */}
-            <div className="nav-logo">
-              <Link href="/">
+            <Link href="/">
                 <Image
                     src="/LL logo 2.jpg"
                     alt="Catering Business Logo"
