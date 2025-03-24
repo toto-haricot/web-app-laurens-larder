@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import CanapeMenu from "../components/CateringPageCanapeMenu";
+import GrazeMenu from "../components/CateringPageGrazeMenu";
+import FingerFoodMenu from "../components/CateringPageFingerFoodMenu";
 
 export default function Catering() {
     return (
@@ -21,7 +23,10 @@ export default function Catering() {
           </div>
 
         <CanapeMenu/>
-        
+        <GrazeMenu/>
+        <FingerFoodMenu/>
+
+
       </section>
     )
 }
