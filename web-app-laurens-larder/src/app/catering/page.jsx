@@ -15,16 +15,18 @@ export default function Catering() {
               Lauren's Larder offers exceptional catering services tailored to your needs, including full-service catering, convenient drop-off, and beautifully prepared platter collection. Whether you're hosting an intimate gathering or a large event, we bring fresh, high-quality food to your table. Explore our caterings options :
             </div>
             <div className="catering-menus-overview flex w-3/4 justify-around font-bold text-xl underline">
-              <div>CANAPÉ MENU</div>
-              <div>GRAZE MENU</div>
-              <div>FINGER FOOD MENU</div>
-              <div>LUNCH MENU</div>
+              <a href="#canape" className="hover:underline"> CANAPÉ MENU</a>
+              <a href="#graze" className="hover:underline"> GRAZE MENU</a>
+              <a href="#finger" className="hover:underline"> FINGER FOOD MENU</a>
+              <a href="#lunch" className="hover:underline"> LUNCH MENU</a>
             </div>
           </div>
 
         <CanapeMenu/>
         <GrazeMenu/>
         <FingerFoodMenu/>
+
+
 
 
       </section>

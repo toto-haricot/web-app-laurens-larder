@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function CanapeMenu() {
     return (
-        <div className="title-plus-description w-4/5">
+        <div id="canape" className="title-plus-description w-4/5">
             <div className="title">
                 CANAPÉ MENU
             </div>

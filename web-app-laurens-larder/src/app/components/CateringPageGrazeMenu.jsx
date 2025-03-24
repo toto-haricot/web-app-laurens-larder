@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function GrazeMenu() {
     return (
-          <div className="title-plus-description w-4/5">
+          <div id="graze" className="title-plus-description w-4/5">
             <div className="title">
                 GRAZE MENU
             </div>

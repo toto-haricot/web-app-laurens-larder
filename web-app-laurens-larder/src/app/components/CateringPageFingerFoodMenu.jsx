@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function FingerFoodMenu() {
     return (
-        <div className="title-plus-description w-4/5">
+        <div id="finger" className="title-plus-description w-4/5">
         <div className="title">
             FINGER MENU
         </div>
