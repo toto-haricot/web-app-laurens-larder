@@ -3,6 +3,7 @@ import Link from "next/link";
 import CanapeMenu from "../components/CateringPageCanapeMenu";
 import GrazeMenu from "../components/CateringPageGrazeMenu";
 import FingerFoodMenu from "../components/CateringPageFingerFoodMenu";
+import LunchMenu from "../components/CateringPageLunchMenu";
 
 export default function Catering() {
     return (
@@ -25,10 +26,7 @@ export default function Catering() {
         <CanapeMenu/>
         <GrazeMenu/>
         <FingerFoodMenu/>
-
-
-
-
+        <LunchMenu/>
       </section>
     )
 }
