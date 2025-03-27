@@ -7,7 +7,7 @@ function CanapeMenu() {
             <div className="title">
                 CANAPÉ MENU
             </div>
-            {/* CANAPÉ MENU 1/3 */}
+            {/* CANAPÉ MENU */}
             <div className="grid grid-cols-3 gap-4 h-[550px] w-full pb-[50px]">
                 <div className="relative overflow-hidden rounded-md group">
                     <Image
