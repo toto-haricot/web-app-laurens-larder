@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import "./globals.css";
 
-
+// just pour faire un commit
 export default function Layout({ children }) {  
   return (
     <html lang="en">
