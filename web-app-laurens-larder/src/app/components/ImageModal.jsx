@@ -24,13 +24,12 @@ export default function ImageModal({ src, alt }) {
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           onClick={() => setIsOpen(false)}
         >
-            <div className="flex items-center justify-center z-51">
+            <div className="relative pt-[40px]">
                 <Image
                     src={src}
                     alt={alt}
-                    height={0}
-                    width={0}
-                    className="h-[60vh] w-auto"
+                    height={800}
+                    width={400}
                 />
                 </div>
         </div>

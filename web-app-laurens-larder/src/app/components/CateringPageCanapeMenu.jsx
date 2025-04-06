@@ -17,22 +17,10 @@ function CanapeMenu() {
                     <ImageModal src="/menu-canape-1.jpg" alt="Image menu canapé 1/3"/>
                 </div>
                 <div className="relative overflow-hidden rounded-md group">
-                    <Image
-                        src="/menu-canape-2.jpg"
-                        alt="Image menu canapé 1/3"
-                        fill={true}
-                        style={{objectFit:'cover'}}
-                        className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105 object-top"
-                    />
+                    <ImageModal src="/menu-canape-2.jpg" alt="Image menu canapé 2/3"/>
                 </div>
                 <div className="relative overflow-hidden rounded-md group">
-                    <Image
-                        src="/menu-canape-3.jpg"
-                        alt="Image menu canapé 1/3"
-                        fill={true}
-                        style={{objectFit:'cover'}}
-                        className="rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105 object-top"
-                    />
+                    <ImageModal src="/menu-canape-3.jpg" alt="Image menu canapé 2/3"/>
                 </div>
             </div>
         </div>    
