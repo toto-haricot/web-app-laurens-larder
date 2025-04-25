@@ -244,3 +244,20 @@ footer {
 .catering-page-container h1 {
   padding-bottom: flex;
 }
+
+@media (max-width: 799px) {
+  .title {
+    font-size: 32px
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 90%;
+    padding-top: 20px;
+  }
+
+  .homepage-welcome-section-image-right {
+    display: none; 
+  }
+}

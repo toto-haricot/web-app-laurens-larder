@@ -88,13 +88,18 @@ export default function ContactPage() {
                 <option value="quote">Quote for Catering</option>
                 <option value="business">Business Contact</option>
                 <option value="wedding">Wedding catering</option>
+                <option value="trailer">Trailer booking</option>
                 <option value="other">Other</option>
             </select>
             </div>
 
             <div>
             <label className="block">Message</label>
-            <textarea {...register("message")} className="border p-2 w-full rounded" rows="4" />
+            <textarea 
+              {...register("message")} 
+              className="border p-2 w-full rounded" 
+              rows="4" 
+              placeholder="Be as precise as possible (day, time, number of people, allergen, pick-up or delivery)"/>
             {errors.message && <p className="text-red-500">{errors.message.message}</p>}
             </div>
 
