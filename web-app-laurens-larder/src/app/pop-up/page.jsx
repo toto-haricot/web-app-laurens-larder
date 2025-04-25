@@ -17,7 +17,11 @@ export default function PopUp() {
                     src="/laurens-larder-ag-show-2.jpg"
                     alt="pop up cover image"
                     fill
-                    style={{objectFit:'cover'}}
+                    style={{
+                        objectFit:'cover',
+                        objectPosition: 'center 30%'
+                    
+                    }}
                     className="cursor-pointer rounded-md transition-transform duration-300 ease-in-out group-hover:scale-105 object-top"
                     />
             </div>

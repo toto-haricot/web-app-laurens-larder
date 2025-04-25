@@ -24,7 +24,13 @@ export default function Navbar() {
                 <Link href="/catering">CATERING</Link>
                 <Link href="/pop-up">POP-UP</Link>
                 <div id="order">
-                  <Link href="/order">ORDER</Link>
+                  <Link 
+                    href="https://cookaborough.com/laurens-larder/about"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                      ORDER
+                  </Link>
                 </div>
                 
             </div>
