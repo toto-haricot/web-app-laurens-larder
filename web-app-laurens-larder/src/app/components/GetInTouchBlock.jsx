@@ -31,11 +31,16 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      if (res.ok) {
-        setSuccess("Your message has been sent!");
-      } else {
-        throw new Error("Something went wrong");
+
+      const result = await res.json();
+      console.log("Server response:", result);
+
+      if (!res.ok) {
+        setSuccess(result.message || "Something went wrong");
+        return;
       }
+  
+      setSuccess("Your message has been sent!");
     } catch (error) {
       console.error(error);
       setSuccess("Failed to send message");
@@ -82,7 +87,8 @@ export default function ContactPage() {
             <select {...register("requestType")} className="border p-2 w-full rounded">
                 <option value="quote">Quote for Catering</option>
                 <option value="business">Business Contact</option>
-                <option value="general">Get in Touch</option>
+                <option value="wedding">Wedding catering</option>
+                <option value="other">Other</option>
             </select>
             </div>
 
