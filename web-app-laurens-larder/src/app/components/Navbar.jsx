@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className="md:hidden absolute right-4">
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="text-xl"
+                className="text-2xl"
                 aria-label="Toggle menu"
               >
                 ☰

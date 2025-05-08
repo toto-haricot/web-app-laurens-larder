@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function LunchMenu() {
     return (
-          <div id="graze" className="title-plus-description w-1/2 mx-auto">
+          <div id="lunch" className="title-plus-description w-1/2 mx-auto">
             <div className="title">
                 LUNCH MENU
             </div>
