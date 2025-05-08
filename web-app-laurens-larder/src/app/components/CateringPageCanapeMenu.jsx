@@ -8,11 +8,11 @@ function CanapeMenu() {
 
     return (
         <div id="canape" className="title-plus-description w-4/5">
-            <div className="title">
+            <div className="title pb-[30px]">
                 CANAPÉ MENU
             </div>
             {/* CANAPÉ MENU */}
-            <div className="grid grid-cols-3 gap-4 h-[550px] w-full pb-[50px]">
+            <div className="grid md:grid-cols-3 gap-4 h-[1200px] md:h-[550px] w-full">
                 <div className="relative overflow-hidden rounded-md group">
                     <ImageModal src="/menu-canape-1.jpg" alt="Image menu canapé 1/3"/>
                 </div>
