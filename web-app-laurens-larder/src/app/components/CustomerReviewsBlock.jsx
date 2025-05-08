@@ -14,18 +14,33 @@ const reviews = [
 ];
 
 export default function CustomerReviews() {
-  const [visibleReviews, setVisibleReviews] = useState(reviews.slice(0, 4));
+  const [visibleReviews, setVisibleReviews] = useState([]);
+  const [reviewsToShow, setReviewsToShow] = useState(4);
 
+  // Detect screen size to set number of reviews
   useEffect(() => {
+    const updateReviewsToShow = () => {
+      setReviewsToShow(window.innerWidth < 768 ? 1 : 4); // Tailwind's md breakpoint is 768px
+    };
+
+    updateReviewsToShow();
+    window.addEventListener("resize", updateReviewsToShow);
+    return () => window.removeEventListener("resize", updateReviewsToShow);
+  }, []);
+
+  // Cycle through the correct number of reviews
+  useEffect(() => {
+    setVisibleReviews(reviews.slice(0, reviewsToShow));
+
     const interval = setInterval(() => {
       setVisibleReviews((prev) => {
-        const nextIndex = (reviews.indexOf(prev[0]) + 1) % reviews.length;
-        return reviews.slice(nextIndex, nextIndex + 4);
+        const nextIndex = (reviews.indexOf(prev[0]) + reviewsToShow) % reviews.length;
+        return reviews.slice(nextIndex, nextIndex + reviewsToShow);
       });
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [reviewsToShow]);
 
   return (
     <section className="homepage-section">
@@ -39,11 +54,11 @@ export default function CustomerReviews() {
         </div>
       </div>
 
-      <div className="flex overflow-hidden w-4/5 h-[300px] gap-4 mx-auto">
+      <div className="flex overflow-hidden w-full md:w-4/5 h-[300px] gap-4 mx-auto">
         {visibleReviews.map((review, index) => (
           <div
             key={index}
-            className="relative flex-1 min-w-[20%] bg-gray-100 border border-gray-400 flex items-center justify-center p-4 text-center rounded-md text-base"
+            className="relative flex-shrink-0 w-full md:flex-1 md:min-w-[20%] bg-gray-100 border border-gray-400 flex items-center justify-center p-4 text-center rounded-md text-base"
           >
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] italic leading-relaxed">
               {review.text}
